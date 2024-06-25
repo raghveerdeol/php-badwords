@@ -17,7 +17,7 @@
         </p>
         <p>
             <?php
-            echo strlen($var1);
+            echo "Lunghezza paragrafo " . strlen($var1) . " parole";
             ?>
         </p>
         <p>
@@ -30,6 +30,20 @@
             <input type="text" name="censure" id="censure">
             <input type="submit">
         </form>
+        <p>
+            <?php
+                if (strlen($_GET["censure"]) > 0) {
+                    echo str_replace(trim($_GET["censure"]),"***",$var1);
+                }
+            ?>
+        </p>
+        <p>
+        <?php
+                if (strlen($_GET["censure"]) > 0) {
+                    echo strlen(str_replace(trim($_GET["censure"]),"***",$var1));
+                }
+            ?>
+        </p>
     </main>
 </body>
 </html>
