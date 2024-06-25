@@ -14,6 +14,13 @@
             <?php
                 echo $var1;
             ?>
+        </p>
+        <p>
+            <?php
+            echo strlen($var1);
+            ?>
+        </p>
+        <p>
             <?php
                 echo $_GET["censure"];
             ?>
