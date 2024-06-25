@@ -14,6 +14,15 @@
             <?php
                 echo $var1;
             ?>
+            <?php
+                echo $_GET["censure"];
+            ?>
+        </p>
+        <form action="./index.php" method="get">
+            <label for="censure">Parola da censurare:</label>
+            <input type="text" name="censure" id="censure">
+            <input type="submit">
+        </form>
     </main>
 </body>
 </html>
